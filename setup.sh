@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 #
-# Setup script for kakariko server
+# Setup script for kakariko server.
+#
+# This script should be idempotent.
+#
 set -euo pipefail
 
 ### Configs to be copied over
