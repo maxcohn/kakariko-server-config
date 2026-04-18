@@ -7,13 +7,13 @@
 set -euo pipefail
 
 # Install system wide packages
-apt install openssh-server
+apt install openssh-server git
 
 ### Configs to be copied over
 
 ## sshd
 # sshd_config files
-cp -r etc/ssh/sshd_config.d/ /etc/ssh/sshd_config.d/
+cp etc/ssh/sshd_config.d/* /etc/ssh/sshd_config.d/
 
 # Restart sshd
 systemctl restart sshd
