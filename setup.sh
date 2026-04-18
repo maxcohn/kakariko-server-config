@@ -6,6 +6,9 @@
 #
 set -euo pipefail
 
+# Install system wide packages
+apt install openssh-server
+
 ### Configs to be copied over
 
 ## sshd
